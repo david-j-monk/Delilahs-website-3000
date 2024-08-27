@@ -75,7 +75,9 @@ function App() {
           {firstNumber} x {secondNumber} ={" "} {/* We're displaying the multiplication problem */}
           <input
             className="answerfield" // This is the CSS class for our input field 
-            type="text" // Our input field is a text field
+            type="number" // Our input field is a number field
+            pattern="[0-9]*" 
+            inputmode="numeric"
             value={typedAnswer} // The value in our input field is whatever the user has typed as their answer
             onChange={(e) => { // When the user types something, we update typedAnswer
               // Check if the input is a number and its length is less than or equal to 3
