@@ -4,6 +4,7 @@ import spinning_pizza from './imajea/PIZZA.png'
 import bunny from './imajea/bunnypic.jpg'
 import splat from './imajea/splat.png'
 import './App.css';
+import { Header } from './components/header'
 
 // We're importing some tools from React that we'll use to build our app
 import { useState, useEffect } from 'react';
@@ -69,14 +70,15 @@ function App() {
   // This is what our component looks like
   return (
     <div className="App"> {/* This is the main container for our app */}
-      <header className="App-header"> {/* This is the header section of our app */}
+      <Header/>
+      <body className="App-body">
         <h1> {/* This is a heading */}
-        {clicked && <span className='correct-marker'>{correct ? "✔ " : "❌ "}</span>}
+          {clicked && <span className='correct-marker'>{correct ? "✔ " : "❌ "}</span>}
           {firstNumber} x {secondNumber} ={" "} {/* We're displaying the multiplication problem */}
           <input
             className="answerfield" // This is the CSS class for our input field 
             type="number" // Our input field is a number field
-            pattern="[0-9]*" 
+            pattern="[0-9]*"
             inputmode="numeric"
             value={typedAnswer} // The value in our input field is whatever the user has typed as their answer
             onChange={(e) => { // When the user types something, we update typedAnswer
@@ -123,7 +125,7 @@ function App() {
           <p>⬆ click me ⬆</p> {/* This is another "click me" text */}
         </a>
         <hr width="50%" /> {/* This is another horizontal line */}
-      </header>
+      </body>
     </div>
   );
 
