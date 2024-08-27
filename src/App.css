@@ -13,6 +13,10 @@
   max-width: 1.75em;
 }
 
+.correct-marker{
+  color: green;
+}
+
 .bunnydiv {
   height: 10em;
   width: auto;
@@ -52,9 +56,8 @@ a:active {
 .peza {
   height: 10em;
   width: 10em;
+  border-radius: 50%;
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .peza {
