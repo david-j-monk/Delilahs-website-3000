@@ -1,7 +1,7 @@
 // We're importing some images and styles for our app
 import logo from './imajea/dee_load_screen.png';
 import spinning_pizza from './imajea/PIZZA.png'
-import bunny from './imajea/bunnypic.jpg'
+import mara from './imajea/patagonian-mara.jpg'
 import splat from './imajea/splat.png'
 import './App.css';
 import { Header } from './components/header'
@@ -111,9 +111,9 @@ function App() {
         <img src={spinning_pizza} className="peza" alt="pizza" /> {/* This is another image */}
         <hr width="50%" /> {/* This is a horizontal line */}
         <p>My fave animal 😁</p> {/* This is another paragraph of text */}
-        <a href="https://www.google.com/search?q=bunny&tbm=isch"> {/* This is a link. When clicked, it will take the user to a Google Images search for "bunny" */}
+        <a href="https://en.wikipedia.org/wiki/Patagonian_mara"> {/* This is a link. When clicked, it will take the user to a Google Images search for "bunny" */}
           <div className="bunnydiv"> {/* This is a container for the bunny image and the "click me" text */}
-            <img src={bunny} className="bunnypic" alt="bunny" /> {/* This is the bunny image */}
+            <img src={mara} className="bunnypic" alt="mara" /> {/* This is the bunny image */}
             <p>⬆ click me ⬆</p> {/* This is the "click me" text */}
           </div>
         </a>
